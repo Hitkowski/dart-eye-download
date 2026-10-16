@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0E0F0E" />
+  <title>Dart Eye — pobierz APK</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="head">
+      <p class="brand">DART EYE</p>
+      <img class="zeiss" src="zeiss.svg" width="120" height="40" alt="ZEISS" />
+    </header>
+    <h1 class="display">Pobierz Dart Eye</h1>
+    <p class="lead">Aplikacja na telefon (Android) do sterowania tarczą Dart Eye.</p>
+    <a class="btn" id="dl" href="https://github.com/Hitkowski/dart-eye-download/releases/latest/download/DartEye.apk">Pobierz APK</a>
+    <p class="meta" id="meta">Release: latest · SHA256 w opisie wydania</p>
+    <section class="steps">
+      <h2>Instalacja na Androidzie</h2>
+      <ol>
+        <li>Pobierz <strong>DartEye.apk</strong> (przycisk powyżej).</li>
+        <li>Otwórz plik — jeśli Android zapyta, zezwól na instalację z przeglądarki / „Nieznane źródła”.</li>
+        <li>Zainstaluj i otwórz aplikację.</li>
+        <li>Włącz Bluetooth i zeskanuj QR nr <strong>2</strong> na ekranie przy tarczy (parowanie).</li>
+      </ol>
+      <p class="note">QR nr 1 na tarczy prowadzi tutaj (internet komórkowy). Bez internetu: połącz się z Wi‑Fi <em>DartEye</em> na Pi i otwórz lokalne <code>/download</code>.</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

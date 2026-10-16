@@ -1,0 +1,123 @@
+:root {
+  --ink: #0e0f0e;
+  --chalk: #f5f0e6;
+  --sisal: #eadbc0;
+  --brass: #c9a24a;
+  --green: #0b7a3e;
+  --font-display: "Oswald", "Arial Narrow", sans-serif;
+  --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background:
+    radial-gradient(circle at 50% 30%, transparent 20%, rgba(0, 0, 0, 0.55) 80%),
+    repeating-conic-gradient(
+      from -4.5deg at 50% 40%,
+      rgba(200, 16, 46, 0.12) 0deg 9deg,
+      transparent 9deg 18deg,
+      rgba(11, 122, 62, 0.12) 18deg 27deg,
+      transparent 27deg 36deg
+    ),
+    var(--ink);
+  color: var(--chalk);
+  font-family: var(--font-body);
+}
+
+.wrap {
+  max-width: 28rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+  text-align: center;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.brand {
+  margin: 0;
+  font-family: var(--font-display);
+  letter-spacing: 0.14em;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.zeiss { height: 28px; width: auto; opacity: 0.95; }
+
+.display {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 7vw, 2.4rem);
+  letter-spacing: 0.04em;
+  color: var(--sisal);
+}
+
+.lead {
+  margin: 0 0 1.5rem;
+  color: rgba(245, 240, 230, 0.75);
+  line-height: 1.4;
+}
+
+.btn {
+  display: inline-block;
+  min-width: min(100%, 18rem);
+  padding: 0.95rem 1.25rem;
+  background: linear-gradient(180deg, #f0d78a, #c9a24a);
+  color: #1a1408;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #a67c2a;
+}
+
+.meta {
+  margin: 0.75rem 0 2rem;
+  font-size: 0.8rem;
+  color: rgba(234, 219, 192, 0.55);
+}
+
+.steps {
+  text-align: left;
+  padding: 1rem 1.1rem 1.2rem;
+  border: 1px solid rgba(201, 162, 74, 0.4);
+  background: rgba(18, 20, 18, 0.88);
+}
+
+.steps h2 {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.06em;
+  color: var(--brass);
+}
+
+.steps ol {
+  margin: 0;
+  padding-left: 1.2rem;
+  line-height: 1.45;
+  color: var(--sisal);
+}
+
+.steps li { margin: 0.35rem 0; }
+
+.note {
+  margin: 1rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: rgba(234, 219, 192, 0.55);
+}
+
+code {
+  font-size: 0.85em;
+  color: var(--brass);
+}
